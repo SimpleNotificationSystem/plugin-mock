@@ -40,24 +40,6 @@ The mock provider accepts notifications with the following structure:
 }
 ```
 
-### Example
-
-```typescript
-import { SimpleNS } from '@simplens/core';
-
-const notification = {
-  channel: 'mock',
-  recipient: {
-    user_id: 'test-user-123'
-  },
-  content: {
-    message: 'Hello, this is a test notification!'
-  }
-};
-
-await simplens.send(notification);
-```
-
 ## Configuration Options
 
 | Option | Type | Default | Description |
