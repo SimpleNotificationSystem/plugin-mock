@@ -1,6 +1,6 @@
 {
     "name": "@simplens/mock",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Mock provider plugin for SimpleNS for testing",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
