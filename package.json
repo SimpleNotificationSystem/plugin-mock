@@ -1,6 +1,6 @@
 {
     "name": "@simplens/mock",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Mock provider plugin for SimpleNS for testing",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -26,7 +26,7 @@
     "author": "SimpleNS Team",
     "license": "MIT",
     "dependencies": {
-        "@simplens/sdk": "^1.0.4"
+        "@simplens/sdk": "^1.0.5"
     },
     "devDependencies": {
         "@types/node": "^25.0.3",

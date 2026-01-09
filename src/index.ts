@@ -54,11 +54,12 @@ class MockProvider implements SimpleNSProvider<MockNotification>{
 
     getRateLimitConfig(): RateLimitConfig {
        const options = this.config?.options as Record<string, unknown> | undefined;
-        const rateLimit = options?.rateLimit as { maxTokens?: number; refillRate?: number } | undefined;
+        const rateLimit = options?.rateLimit as { maxTokens?: number; refillRate?: number; refillInterval: 'second' | 'minute' | 'hour' | 'day' } | undefined;
 
         return {
             maxTokens: rateLimit?.maxTokens || 100,
             refillRate: rateLimit?.refillRate || 10,
+            refillInterval: rateLimit?.refillInterval || 'second',
         }; 
     }
 
